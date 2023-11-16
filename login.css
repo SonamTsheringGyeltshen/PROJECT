@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.header {
+    background-image: url("https://p.vitalmtb.com/photos/stories/2021/11/30/full_07_MET_Parachute_MCR_3_Web_ulyssedaessle_met_helmets_147715.jpg");
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 10vh;
+    background-repeat: no-repeat;
+    /*     background: transparent; */
+}
+
+nav {
+    width: 100%;
+    background-color: transparent;
+    background-attachment: fixed;
+    font-family: 'Syne Mono', monospace;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+nav a:hover {
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+svg {
+    color: black;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+
+}
+.sidebar {
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 60vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.sidebar li {
+    width: 100%
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+
+}
+
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+}
+
+.menu-button {
+    display: block;
+}
+
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d9d7ad104360973.5f6142500e188.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid white;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #ffffff;
+}
+.inputbox i {
+   position: absolute;
+    right: 8px;
+    color: #ffffff;
+    font-size: 1.2em;
+    top: 20px;
+ }
+ label{
+    font-size: 18px;
+ }
+.forget{
+    margin: -15px 0 15px;
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+.forget label input {
+    margin-right: 3px;
+  }
+.forget label a {
+    color: black;
+    text-decoration:none;
+    margin-left: 15px;
+  }
+.forget label a:hover{
+    text-decoration: underline;
+}
+button {
+  width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register p{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    
+  }
+.register p a:hover{
+    text-decoration: underline;
+}
+.dropdown {
+    width: 100%;
+
+}
+
+#dropdownMenuButton {
+    background: transparent;
+    border: none;
+}
+i {
+    margin: 0px 5px;
+    padding: 10px;
+}
+.fa-facebook {
+    color: rgb(8, 8, 102);
+}
+
+.fa-instagram {
+    color: #fe0066;
+}
+
+.fa-twitter {
+    color: rgb(4, 76, 121);
+}
+
+.fa-youtube {
+    color: #f44336;
+}

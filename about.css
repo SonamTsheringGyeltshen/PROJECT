@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow-x:hidden
+}
+.header {
+    background-image: url("https://p.vitalmtb.com/photos/stories/2021/11/30/full_07_MET_Parachute_MCR_3_Web_ulyssedaessle_met_helmets_147715.jpg");
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 10vh;
+    background-repeat: no-repeat;
+    /*     background: transparent; */
+}
+
+nav {
+    width: 100%;
+    background-color: transparent;
+    background-attachment: fixed;
+    font-family: 'Syne Mono', monospace;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+nav a:hover {
+    transition: 0.5s;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+
+}
+.sidebar {
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 60vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.sidebar li {
+    width: 100%
+}
+
+.sidebar a {
+    width: 100%;
+    color: black;
+}
+
+.menu-button {
+    display: none;
+
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+   
+
+}
+
+.about {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.about:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+#parents {
+    background-image: url('/image/g1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    background-size: cover;
+}
+
+.parents {
+    background-color: whitesmoke;
+    height: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.us {
+    color: blue;
+}
+
+.first {
+    width: 50%;
+    text-align: justify;
+    padding: 10px;
+}
+
+#carouselExampleControlss {
+    width: 50%;
+    /* margin-top: 14.89em; */
+}
+
+#carouselExampleControlss img {
+    height: 60vh;
+}
+
+.abt {
+    text-align: center;
+}
+
+.man {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-color: whitesmoke;
+}
+
+.name {
+    text-align: center;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin-top: 20px;
+}
+
+.cardd .card-img-top {
+    height: auto;
+    border-radius: 50%;
+    height: 200px;
+    width: 100%;
+}
+
+.cardd {
+    width: 15%;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+
+}
+
+
+.cardd-group {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.cardd .card-body {
+    text-align: center;
+}
+
+.cardd .card-title {
+    font-size: 15px;
+    text-align: center;
+}
+
+.cardd-group {
+    margin-bottom: 10px;
+}
+
+#emp {
+    height: 5px;
+    box-shadow: 0 0 15px black;
+}
+
+
+
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+}
+
+.menu-button {
+    display: block;
+}
+
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+
+#cont {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.flip {
+    width: 30%;
+    height: 45%;
+    text-align: center;
+    box-shadow: 0px 0px 15px black;
+    background-color: aliceblue;
+    border-radius: 20px;
+    margin: 0px 10px;
+}
+#pics {
+    width: 98%;
+    height: 300px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border: 2px solid black;
+
+}
+
+/* media Query */
+@media (max-width:600px) {
+    #carouselExampleControlss {
+        display: none;
+    }
+
+    .first {
+        width: 100%;
+    }
+
+    .man {
+        height: 35vh;
+    }
+
+    .cardd-group {
+        display: flex;
+        flex-direction: column;
+        background-color: whitesmoke;
+    }
+
+    .cardd {
+        width: 50%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .cardd .card-img-top {
+        height: auto;
+    }
+
+    .name {
+        height: 40px;
+    }
+
+    .name h2 {
+        font-size: 19px;
+    }
+}
+
+/* tablet */
+@media (max-width: 768px) and (min-width:601px) {
+    .cardd-group {
+        height: auto;
+    }
+
+    .cardd .card-img-top {
+        height: auto;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+    .cardd-group {
+        height: 70vh;
+    }
+
+    .cardd .card-img-top {
+        height: auto;
+    }
+
+    .cardd {
+        margin-top: 13vh;
+    }
+}
+
+.fa-bars{
+    color: white;
+}
+
+.para {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+i {
+    margin: 0px 5px;
+    padding: 10px;
+}
+
+.flex-de {
+    position: relative;
+    left: 470px;
+}
+
+#footerDiv {
+    /*     width: 30%; */
+    /*     height: 500px; */
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: teal;
+    color: rgb(0, 0, 0);
+    align-items: center;
+}
+#footerDiv a {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
+.footerDiv ul li {
+    list-style: none;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+}
+
+#fot {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    text-align: center;
+}
+
+#fot p {
+    color: white;
+}
+
+/* footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+} */
+i {
+    color: rgb(0, 0, 0);
+    font-size: larger;
+}
+
+.fa-facebook {
+    color: rgb(8, 8, 102);
+}
+
+.fa-instagram {
+    color: #fe0066;
+}
+
+.fa-twitter {
+    color: rgb(4, 76, 121);
+}
+
+.fa-youtube {
+    color: #f44336;
+}

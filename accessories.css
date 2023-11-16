@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.header {
+    background-image: url("https://p.vitalmtb.com/photos/stories/2021/11/30/full_07_MET_Parachute_MCR_3_Web_ulyssedaessle_met_helmets_147715.jpg");
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 10vh;
+    background-repeat: no-repeat;
+        /* background: transparent; */
+}
+
+nav {
+    width: 100%;
+    background-color: transparent;
+    background-attachment: fixed;
+    font-family: 'Syne Mono', monospace;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+nav a:hover {
+    transition: 0.5s;
+    font-weight: bold;
+    color: white;
+}
+
+svg {
+    color: black;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ae443a;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+
+}
+
+.sidebar {
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 60vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.sidebar li {
+    width: 100%
+}
+
+.sidebar a {
+    width: 100%;
+    color: black;
+}
+
+.menu-button {
+    display: none;
+
+}
+
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+}
+
+.menu-button {
+    display: block;
+}
+
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+
+/* body {
+
+    text-align: center;
+    background-color: #F5F5F7;
+    background-image: url("https://blog.bikemap.net/wp-content/uploads/2018/01/AdobeStock_144562833-1080x675.jpeg");
+    background-attachment: fixed;
+} */
+
+
+
+
+header {
+    width: 100%;
+    height: 80px;
+    padding: 5% 3% 1%;
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+
+h1 {
+    position: relative;
+    bottom: 20px;
+}
+
+
+h4 {
+    font-size: 20px;
+    margin: 2% 0 4%;
+    font-weight: 400;
+}
+
+
+div#military {
+    width: 91%;
+    padding: 1% 5% 4%;
+    border-radius: 16px;
+    margin: 3% auto;
+}
+
+ul#specialization-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+#specialization-list li {
+    display: inline-block;
+    margin: 5px;
+    font-size: 24px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+#specialization-list li:hover {
+    padding: 10px 40px;
+}
+
+#specialization-list li:first-child {
+    background-color: black;
+}
+
+#specialization-list li:nth-child(1) {
+    background-color: black;
+}
+
+#specialization-list li:nth-child(2) {
+    background-color: black;
+}
+
+#specialization-list li:nth-child(3) {
+    background-color: black;
+}
+
+#specialization-list li:nth-child(4) {
+    background-color: black;
+}
+
+#specialization-list li:nth-child(5) {
+    background-color: black;
+}
+
+#specialization-list li:nth-child(6) {
+    background-color: black;
+}
+
+
+ul#group-pic-wrapper {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+    gap: 20px;
+}
+
+#group-pic-wrapper li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+label {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    padding: 6px 8px;
+    border-radius: 20px;
+    opacity: 0.97;
+    font-size: 16px;
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+li[data-group="1"] label {
+    background-color: rgb(0, 0, 0);
+}
+
+li[data-group="2"] label {
+    background-color:saddlebrown
+}
+
+li[data-group="3"] label {
+    background-color: burlywood;
+}
+
+li[data-group="4"] label {
+    background-color: darkblue;
+}
+
+li[data-group="5"] label {
+    background-color: green;
+}
+
+li[data-group="6"] label {
+    background-color: mediumpurple;
+}
+
+.alpha {
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 7px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    transition: 0.2s ease-out;
+}
+
+.alpha:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.alpha img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.alpha h3 {
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+    padding: 5% 4%;
+    color: #434343;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.container {
+    background-image: url("https://www.cdc.gov/disasters/winter/images/winter-weather-1200.jpg");
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 60px;
+}
+
+nav {
+    background: transparent;
+    padding: 5px;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-flex;
+    padding: 5px 1px;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    height: 20px;
+}
+
+nav ul li::after {
+    content: '';
+    background: #f44566;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s opacity 0.5s;
+}
+button{
+    width: 25%;
+    background: transparent;
+    border-radius: 10px;
+    border: none;
+}
+button:hover{
+    background-color: rgb(243, 173, 81);
+    transition: 0.5s;
+}
+
+ul {
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.container .nav ul li {
+    width: 100px;
+    height: 10px;
+}
+.flex-de {
+    position: relative;
+    left: 470px;
+}
+
+#footerDiv {
+    /*     width: 30%; */
+    /*     height: 500px; */
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: teal;
+    color: rgb(0, 0, 0);
+    align-items: center;
+}
+#footerDiv a {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
+.footerDiv ul li {
+    list-style: none;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+}
+
+#fot {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    text-align: center;
+}
+
+/* footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+} */
+i {
+    color: rgb(0, 0, 0);
+    font-size: larger;
+}
+.fa-bars{
+    color: #ffffff;
+}
+.dropdown {
+    width: 100%;
+    
+}
+
+#dropdownMenuButton {
+    background: transparent;
+    border: none;
+    color: black;
+}
+i {
+    margin: 0px 5px;
+    padding: 10px;
+}
+.fa-facebook {
+    color: rgb(8, 8, 102);
+}
+
+.fa-instagram {
+    color: #fe0066;
+}
+
+.fa-twitter {
+    color: rgb(4, 76, 121);
+}
+
+.fa-youtube {
+    color: #f44336;
+}

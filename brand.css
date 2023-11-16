@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.header {
+    background-image: url("https://p.vitalmtb.com/photos/stories/2021/11/30/full_07_MET_Parachute_MCR_3_Web_ulyssedaessle_met_helmets_147715.jpg");
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 10vh;
+    background-repeat: no-repeat;
+    /*     background: transparent; */
+}
+
+nav {
+    width: 100%;
+    background-color: transparent;
+    background-attachment: fixed;
+    font-family: 'Syne Mono', monospace;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+nav a:hover {
+    transition: 0.5s;
+    font-weight: bold;
+    color: white;
+}
+
+svg {
+    color: black;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+
+}
+.sidebar {
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 60vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.sidebar li {
+    width: 100%
+}
+
+.sidebar a {
+    width: 100%;
+    color: black;
+}
+
+.menu-button {
+    display: none;
+
+}
+
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+}
+
+.menu-button {
+    display: block;
+}
+
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+.card-text {
+    font-size: 18px;
+}
+.card{
+    width: 30%; 
+    display: flex;
+    margin: 20px;
+}
+.flex-de {
+    position: relative;
+    left: 470px;
+}
+.para {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+#footerDiv {
+    /*     width: 30%; */
+    /*     height: 500px; */
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: teal;
+    color: rgb(0, 0, 0);
+    align-items: center;
+}
+#footerDiv a {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
+.footerDiv ul li {
+    list-style: none;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+}
+
+#fot {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    text-align: center;
+}
+
+i {
+    margin: 0px 5px;
+    padding: 10px;
+}
+.fa-circle-xmark {
+    color: rgb(0, 0, 0);
+    font-size: larger;
+}
+.dropdown {
+    width: 100%;
+
+}
+
+#dropdownMenuButton {
+    background: transparent;
+    border: none;
+    color: black;
+}
+.fa-facebook {
+    color: rgb(8, 8, 102);
+}
+
+.fa-instagram {
+    color: #fe0066;
+}
+
+.fa-twitter {
+    color: rgb(4, 76, 121);
+}
+
+.fa-youtube {
+    color: #f44336;
+}
+/* @media(max-width: 400px) {
+    .card {
+        width: 100%;
+    }
+} */
+@media (max-with:600px){
+    .card{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.header {
+    background-image: url("https://p.vitalmtb.com/photos/stories/2021/11/30/full_07_MET_Parachute_MCR_3_Web_ulyssedaessle_met_helmets_147715.jpg");
+    display: flex;
+/*     align-content: center;
+    align-items: center; */
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+nav {
+    width: 100%;
+    background-color: transparent;
+    background-attachment: fixed;
+    font-family: 'Syne Mono', monospace;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px; 
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+nav a:hover {
+    transition: 0.5s;
+    font-weight: bold;
+    color: white;
+}
+
+.fa-bars, .fa-regular {
+    color: rgb(255, 255, 255);
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-btn {
+    width: 30%;
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid white;
+    padding: 12px 30px;
+    font-size: 17px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 69vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.sidebar li {
+    width: 100%
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+}
+
+.menu-button {
+    display: block;
+}
+
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+.dropdown{
+    width: 100%;
+}
+#dropdownMenuButton{
+    background: transparent;
+    border: none;
+}
+
+.banner {
+    /*     height: 100vh; */
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 0 20px 0px black;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 3px 3px 3px black;
+}
+
+#home-banner1 {
+    margin-top: 20px;
+    /*      background-image: url("https://p.vitalmtb.com/photos/stories/2021/11/30/full_07_MET_Parachute_MCR_3_Web_ulyssedaessle_met_helmets_147715.jpg"); */
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Syne Mono', monospace;
+
+}
+
+.home {
+    width: 80%;
+    margin: auto; 
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+h1 {
+    font-size: 46px;
+    font-weight: 600;
+    font-family: 'Syne Mono', monospace;
+}
+
+p {
+    color: #777;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.about {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.about:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+.campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.campus-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.campus-col img {
+    width: 100%;
+    /* height: 210px; */
+    display: block;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+
+}
+
+.Bikes {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.bike-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.bike-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.bike-col p {
+    padding: 0;
+}
+
+.bike-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.text-box {
+    width: 90%;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #ffffff;
+}
+.para{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+i {
+  margin: 0px 5px;
+    padding: 10px;
+}
+.flex-de{
+    position: relative;
+    left: 470px;
+}
+#footerDiv{
+/*     width: 30%; */
+/*     height: 500px; */
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: teal;
+    color: rgb(0, 0, 0);
+    align-items: center;
+
+}
+#footerDiv a{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
+.footerDiv ul li{
+    list-style: none;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+}
+#fot{
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    text-align: center;
+}
+#fot p{
+    color: white;
+}
+
+/* footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+} */
+i{
+    color: rgb(0, 0, 0);
+    font-size: larger;
+}
+.fa-facebook{
+    color: rgb(8, 8, 102);
+}
+.fa-instagram{
+    color: #fe0066;
+}
+.fa-twitter{
+    color: rgb(4, 76, 121);
+}
+.fa-youtube{
+    color: #f44336;
+}

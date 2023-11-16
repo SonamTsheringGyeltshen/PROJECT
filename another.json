@@ -1,0 +1,123 @@
+[
+    {
+        "id": 1,
+        "name": "ALE",
+        "price": 68.43,
+        "image": "image/img/ALE.webp"
+    },
+    {
+        "id": 2,
+        "name": "SHIMANO",
+        "price": 31.55,
+        "image": "image/img/SHIMANO.webp"
+    },
+    {
+        "id": 3,
+        "name": "CASTELLI",
+        "price": 75.34,
+        "image": "image/IMG/CASTELLI.webp"
+    }
+    ,
+    {
+        "id": 4,
+        "name": "CAMPANOLO",
+        "price": 79,
+        "image": "image/img/CAMPANOLO.webp"
+    },
+    {
+        "id": 5,
+        "name": "AMPLIFI",
+        "price": 123.99,
+        "image": "image/img/AMPLIFI saf.webp"
+    },
+    {
+        "id": 6,
+        "name": "ENDURA",
+        "price": 231.99,
+        "image": "image/img/ENDURA saf.webp"
+    },
+    {
+        "id": 7,
+        "name": "ONEAL",
+        "price": 185.99,
+        "image": "image/IMG/ONEAL saf.webp"
+    },
+    {
+        "id": 8,
+        "name": "FOX",
+        "price": 99.99,
+        "image": "image/img/FOX saf.jpg"
+    },
+    {
+        "id": 9,
+        "name": "ALE",
+        "price": 150.00,
+        "image": "image/IMG/ALE GLOVES.webp"
+    },
+    {
+        "id": 10,
+        "name": "NORTHWAVE PGLOVES.WEB",
+        "price":221.99,
+        "image": "image/img/NORTHWAVE GLOVES.webp"
+    },
+    {
+        "id": 11,
+        "name": "PEDALES",
+        "price": 129.99,
+        "image": "image/IMG/PEDALED GLOVES.webp"
+    },
+    {
+        "id": 12,
+        "name": "RAPHA",
+        "price": 200.00,
+        "image": "image/IMG/RAPHA GLOVES.webp"
+    },
+    {
+        "id": 13,
+        "name": "ADIDAS",
+        "price": 122.99,
+        "image": "image/img/Adidas.jpg"
+    },
+    {
+        "id": 14,
+        "name": "DMY",
+        "price": 199.00,
+        "image": "image/img/DMT shoes.webp"
+    },
+    {
+        "id": 15,
+        "name": "Sidi Sixty",
+        "price": 176.99,
+        "image": "image/img/Sidi Sixty shoes.webp"
+    },
+    {
+        "id": 16,
+        "name": "No Cloudultra",
+        "price": 249.00,
+        "image": "image/img/No Cloudultra.webp"
+    },
+    {
+        "id": 17,
+        "name": "NALINI",
+        "price": 169.99,
+        "image": "image/img/NALINI LEG wear.webp"
+    },
+    {
+        "id": 18,
+        "name": "CAMPAGNOLO",
+        "price": 120,
+        "image": "image/img/CAMPAGNOLO leg.webp"
+    },
+    {
+        "id": 19,
+        "name": "RAPHA",
+        "price": 150,
+        "image": "image/img/RAPHA leg.webp"
+    },
+    {
+        "id": 20,
+        "name": "RAPHA",
+        "price": 220,
+        "image": "image/img/RAPHA.webp"
+    }
+]

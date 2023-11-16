@@ -1,0 +1,111 @@
+[
+    {
+        "id": 1,
+        "name": "Giant Reign Advanced pro 29",
+        "price": 29000,
+        "image": "image/one.jpg"
+    },
+    {
+        "id": 2,
+        "name": "X-Caliber",
+        "price": 4799.99,
+        "image": "image/3.PNG.png"
+    },
+    {
+        "id": 3,
+        "name": "Remedy",
+        "price": 5399,
+        "image": "image/4.PNG.webp"
+    }
+    ,
+    {
+        "id": 4,
+        "name": "Slash 9.9",
+        "price": 7999,
+        "image": "image/5.PNG.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Supercaliber SLR 9.9",
+        "price": 3299.99,
+        "image": "image/6.PNG.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Cannondale Treadwell 2",
+        "price": 499.99,
+        "image": "image/w1.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Cannondale Treadwell blue",
+        "price": 499.99,
+        "image": "image/w2.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Cannondale Treadwell black",
+        "price": 499.99,
+        "image": "image/w3.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Tern GSD S10",
+        "price": 5100.00,
+        "image": "image/tern 1.jpg"
+    },
+    {
+        "id": 10,
+        "name": "tern GSD S00",
+        "price": 5199.99,
+        "image": "image/tern2.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Tern GSD red",
+        "price": 5199.99,
+        "image": "image/tern3.webp"
+    },
+    {
+        "id": 12,
+        "name": "Tern Vektron D8",
+        "price": 5200.00,
+        "image": "image/tern4.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Electra Townie",
+        "price": 1899.99,
+        "image": "image/electra 2.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Aventon",
+        "price": 1599.00,
+        "image": "image/aventon1.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Aventon 2",
+        "price": 1599.99,
+        "image": "image/aventon2.jpg"
+    },
+    {
+        "id": 16,
+        "name": "Canyon 27.5",
+        "price": 649.00,
+        "image": "image/canyon1 (2).jpg"
+    },
+    {
+        "id": 17,
+        "name": "Cannondale Scapel carbon 71",
+        "price": 6169.99,
+        "image": "image/1.PNG.webp"
+    },
+    {
+        "id": 18,
+        "name": "Mini kid",
+        "price": 120,
+        "image": "image/kids/k1.webp"
+    }
+]

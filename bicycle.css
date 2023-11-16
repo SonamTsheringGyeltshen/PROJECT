@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.header {
+    background-image: url("https://p.vitalmtb.com/photos/stories/2021/11/30/full_07_MET_Parachute_MCR_3_Web_ulyssedaessle_met_helmets_147715.jpg");
+    display: flex;
+    /*     align-content: center;
+    align-items: center; */
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 10vh;
+    background-repeat: no-repeat;
+}
+
+nav {
+    width: 100%;
+    background-color: transparent;
+    background-attachment: fixed;
+    font-family: 'Syne Mono', monospace;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+nav a:hover {
+    transition: 0.5s;
+    font-weight: bold;
+    color: white;
+}
+
+.fa-bars,
+.fa-regular {
+    color: rgb(255, 255, 255);
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+
+}
+
+img {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-btn {
+    width: 30%;
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid white;
+    padding: 12px 30px;
+    font-size: 17px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 69vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.sidebar li {
+    width: 100%
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+
+}
+
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+}
+
+.menu-button {
+    display: block;
+}
+
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+.dropdown {
+    width: 100%;
+
+}
+
+#dropdownMenuButton {
+    background: transparent;
+    border: none;
+}
+
+
+
+
+
+body {
+    font-family: monospace;
+    overflow-x: hidden;
+    font-synthesis: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    max-width: 90%;
+    transition: transform 1s;
+}
+
+header img {
+    width: 60px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .iconCart {
+    position: relative;
+    z-index: 1;
+}
+
+header .totalQuantity {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: x-large;
+    background-color: #b31010;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: translateX(20px);
+}
+
+.listProduct {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.listProduct .item img {
+    width: 600px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.listProduct .item {
+    position: relative;
+    
+}
+
+.listProduct .item h2 {
+    font-weight: 700;
+    font-size: x-large;
+}
+
+.listProduct .item .price {
+    font-size: x-large;
+}
+
+.listProduct .item button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #e6572c;
+    color: #fff;
+    width: 50%;
+    border: none;
+    padding: 20px 30px;
+    box-shadow: 0 10px 50px #000;
+    cursor: pointer;
+    transform: translateX(-50%) translateY(100px);
+    opacity: 0;
+}
+
+.listProduct .item:hover button {
+    transition: 0.5s;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.cart {
+    color: #fff;
+    position: fixed;
+    width: 450px;
+    max-width: 80vw;
+    height: 100vh;
+    background-color: #0E0F11;
+    top: 0px;
+    right: -100%;
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+    gap: 20px;
+    transition: right 1s;
+}
+
+.cart .buttons .checkout {
+    background-color: #E8BC0E;
+    color: #000;
+}
+
+.cart h2 {
+    color: #E8BC0E;
+    padding: 20px;
+    height: 30px;
+    margin: 0;
+}
+
+
+.cart .listCart .item {
+    display: grid;
+    grid-template-columns: 50px 1fr 70px;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+
+}
+
+.cart .listCart img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cart .listCart .item .name {
+    font-weight: bold;
+}
+
+.cart .listCart .item .quantity {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.cart .listCart .item .quantity span {
+    display: block;
+    width: 50px;
+    text-align: center;
+}
+
+.cart .listCart {
+    padding: 20px;
+    overflow: auto;
+}
+
+.cart .listCart::-webkit-scrollbar {
+    width: 0;
+}
+
+.cart .buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+
+.cart .buttons div {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cart .buttons a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.checkoutLayout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 20px;
+}
+
+.checkoutLayout .right {
+    background-color: #5358B3;
+    border-radius: 20px;
+    padding: 40px;
+    color: #fff;
+}
+
+.checkoutLayout .right .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    border-bottom: 1px solid #7a7fe2;
+    padding-bottom: 20px;
+}
+
+.checkoutLayout .form h1,
+.checkoutLayout .form .group:nth-child(-n+3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.checkoutLayout .form input,
+.checkoutLayout .form select {
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    background-color: #6a6fc9;
+    color: #fff;
+}
+
+.checkoutLayout .right .return .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkoutLayout .right .return .row div:nth-child(2) {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.buttonCheckout {
+    width: 30%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #49D8B9;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #000000;
+
+
+}
+.text1{
+    color: #000;
+}
+
+.returnCart h1 {
+    border-top: 1px solid #eee;
+    padding: 20px 0;
+}
+
+.returnCart .list .item img {
+    height: 80px;
+}
+
+.returnCart .list .item {
+    display: grid;
+    grid-template-columns: 80px 1fr 50px 80px;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    box-shadow: 0 10px 20px #5555;
+    border-radius: 20px;
+}
+
+.returnCart .list .item .name,
+.returnCart .list .item .returnPrice {
+    font-size: large;
+    font-weight: bold;
+}
+
+
+
+/* 
+css for payment method */
+.card {
+    width: 350px;
+    background: transparent;
+    padding: 30px;
+    position: relative;
+}
+
+h1 {
+    padding: 30px 0px;
+    font-size: 40px;
+    color: var(--text-color);
+}
+
+form label {
+    color: var(--text-color);
+    position: relative;
+    font-size: 16px;
+    word-spacing: 4px;
+}
+
+form select {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    text-transform: capitalize;
+    padding-top: 3px;
+    color: var(--text-color);
+    padding-bottom: 3px;
+    font-size: 18px;
+    margin-left: -3px;
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+
+form #cardno {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    padding-top: 5px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    padding-right: 30px;
+    color: var(--text-color);
+    font-size: 18px;
+    background-color: transparent;
+}
+
+.float {
+    display: flex;
+}
+
+#validtill,
+#cvv {
+    border: none;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    outline: none;
+    width: 130px;
+    padding-top: 14px;
+    margin-bottom: 56px;
+    color: var(--text-color);
+    background-color: transparent;
+    font-size: 18px;
+}
+
+p {
+    margin-left: 25px;
+    margin-bottom: 56px;
+    margin-top: -20px;
+    font-size: 15px;
+    text-transform: none;
+}
+.para {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+i {
+    margin: 0px 5px;
+    padding: 10px;
+}
+
+.flex-de {
+    position: relative;
+    left: 470px;
+}
+
+#footerDiv {
+    /*     width: 30%; */
+    /*     height: 500px; */
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: teal;
+    color: rgb(0, 0, 0);
+    align-items: center;
+}
+#footerDiv a {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
+.footerDiv ul li {
+    list-style: none;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+}
+
+#fot {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    text-align: center;
+}
+
+#fot p {
+    color: white;
+}
+
+/* footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+} */
+i {
+    color: rgb(0, 0, 0);
+    font-size: larger;
+}
+
+.fa-facebook {
+    color: rgb(8, 8, 102);
+}
+
+.fa-instagram {
+    color: #fe0066;
+}
+
+.fa-twitter {
+    color: rgb(4, 76, 121);
+}
+
+.fa-youtube {
+    color: #f44336;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
